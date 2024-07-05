@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Template that uses Bootstrap</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      p {
+        border-style: solid;
+      }
+
+      .result {
+        background-color: white;
+        margin: 10px 0;
+        padding: 10px;
+      }
+      .sign {
+        background-color: rgb(183, 182, 182);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container bg-secondary mt-4">
+      <div class="row">
+        <div class="col-sm-12 text-end"><p class="result">0</p></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="sign">mc</p></div>
+        <div class="col-3"><p class="sign">m+</p></div>
+        <div class="col-3"><p class="sign">m</p></div>
+        <div class="col-3"><p class="sign">mr</p></div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="sign">AC</p></div>
+        <div class="col-3"><p class="sign">√x</p></div>
+        <div class="col-3"><p class="sign">%</p></div>
+        <div class="col-3">
+          <p class="bg-warning text-center operator">+</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="bg-light text-center number">7</p></div>
+        <div class="col-3"><p class="bg-light text-center number">8</p></div>
+        <div class="col-3"><p class="bg-light text-center number">9</p></div>
+        <div class="col-3">
+          <p class="bg-warning text-center operator">x</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="bg-light text-center number">4</p></div>
+        <div class="col-3"><p class="bg-light text-center number">5</p></div>
+        <div class="col-3"><p class="bg-light text-center number">6</p></div>
+        <div class="col-3">
+          <p class="bg-warning text-center operator">-</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="bg-light text-center number">1</p></div>
+        <div class="col-3"><p class="bg-light text-center number">2</p></div>
+        <div class="col-3"><p class="bg-light text-center number">3</p></div>
+        <div class="col-3">
+          <p class="bg-warning text-center operator">+</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3"><p class="bg-light text-center number">0</p></div>
+        <div class="col-3"><p class="bg-light text-center number">.</p></div>
+        <div class="col-3"><p class="bg-light text-center number">+/-</p></div>
+        <div class="col-3">
+          <p class="bg-warning text-center operator">=</p>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap javascript plug-ins -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

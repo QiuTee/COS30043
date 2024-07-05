@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>String Test</h1>
+      <label for="name">Please enter your name: </label>
+      <input type="text" name="name" id="name" v-model="strName" />
+      <p v-if="strName.toLowerCase() == 'thang'">Awesome name!</p>
+      <p v-else-if="strName==''"></p>
+      <p v-else>{{strName}} is not my name!</p>
+    </div>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            strName: "",
+          };
+        },
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>
